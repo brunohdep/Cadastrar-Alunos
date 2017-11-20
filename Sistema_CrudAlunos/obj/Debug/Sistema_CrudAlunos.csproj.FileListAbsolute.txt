@@ -1,0 +1,10 @@
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\bin\Debug\Sistema_CrudAlunos.exe.config
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\bin\Debug\Sistema_CrudAlunos.exe
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\bin\Debug\Sistema_CrudAlunos.pdb
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.csprojResolveAssemblyReference.cache
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.Properties.Resources.resources
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.csproj.GenerateResource.Cache
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.csproj.CoreCompileInputs.cache
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.exe
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.pdb
+c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.frm_Crud.resources
