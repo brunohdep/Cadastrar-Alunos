@@ -49,16 +49,6 @@ namespace Sistema_CrudAlunos
             ArrayList arr = new ArrayList();
             try
             {
-                //    arr.Add(1);
-                //    arr.Add("COXINHA");
-                //    arr.Add("300");
-                //    arr.Add("Vale do silicio");
-                //    arr.Add("32546987");
-                //    arr.Add("gume@cino.com");
-                //    arr.Add("California");
-                //    arr.Add("CA");
-                //    arr.Add("DERp");
-                //    arr.Add("DErpina");
                 int codAluno = 2;
                 if (obj.Delete(codAluno))
                 {
@@ -81,15 +71,15 @@ namespace Sistema_CrudAlunos
             ArrayList arr = new ArrayList();
             try
             {
-                arr.Add("COXINHA");
-                arr.Add("300");
-                arr.Add("Vale do silicio");
-                arr.Add("32546987");
-                arr.Add("gume@cino.com");
-                arr.Add("California");
-                arr.Add("CA");
-                arr.Add("DERp");
-                arr.Add("DErpina");
+                arr.Add(tbCad_Nome.Text);
+                arr.Add(tbCad_Idade.Text);
+                arr.Add(tbCad_Endereco.Text);
+                arr.Add(tbCad_Tel.Text);
+                arr.Add(tbCad_Mail.Text);
+                arr.Add(cbCad_CIdade.Text);
+                arr.Add(cbCad_UF.Text);
+                arr.Add(tbCad_Pai.Text);
+                arr.Add(tbCad_Mae.Text);
 
                 if (obj.Insert(arr))
                 {
@@ -112,20 +102,21 @@ namespace Sistema_CrudAlunos
             ArrayList arr = new ArrayList();
             try
             {
-                arr.Add(1);
-                arr.Add("COXINHA");
-                arr.Add("300");
-                arr.Add("Vale do silicio");
-                arr.Add("32546987");
-                arr.Add("gume@cino.com");
-                arr.Add("California");
-                arr.Add("CA");
-                arr.Add("DERp");
-                arr.Add("DErpina");
+                arr.Add(tbEd_Cod.Text);
+                arr.Add(tbEd_Nome.Text);
+                arr.Add(tbEd_Idade.Text);
+                arr.Add(tbEd_Endereco.Text);
+                arr.Add(tbEd_Tel.Text);
+                arr.Add(tbEd_Mail.Text);
+                arr.Add(cbEd_Cidade.Text);
+                arr.Add(cbEd_UF.Text);
+                arr.Add(tbEd_Pai.Text);
+                arr.Add(tbEd_Mae.Text);
 
                 if (obj.Update(arr))
                 {
                     MessageBox.Show("Atualizado", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgEditarAluno_Enter(e, e);
                 }
                 else
                 {
@@ -179,8 +170,6 @@ namespace Sistema_CrudAlunos
                 sql = "SELECT [NOME] as Nome,[IDADE] as Idade,[ENDERECO] as Endereço,[TELEFONE] as Telefone,[EMAIL] as Email FROM CURD_ALUNOS WHERE ID_ALUNO LIKE @VALOR";
                 dgPesquisarAluno.DataSource = obj.Pesquisar(sql, tb_pesquisar.Text);
             }
-            //obj.Pesquisar()
-            //dgEditarAluno.DataSource = obj.ListaGrid();
         }
 
         private void dgExcluirAluno_Enter(object sender, EventArgs e)
@@ -189,14 +178,33 @@ namespace Sistema_CrudAlunos
              dgExcluirAluno.DataSource = obj.ListaGrid();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void tabPage2_Enter(object sender, EventArgs e)
         {
-
+            sisDBADM obj = new sisDBADM();
+            cbEd_UF.DataSource = obj.listUF();
+            cbEd_UF.DisplayMember = "Sigla";
+            dgEditarAluno.DataSource = obj.ListaGrid();
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void cbEd_UF_SelectedIndexChanged(object sender, EventArgs e)
         {
+            sisDBADM obj = new sisDBADM();
+            cbEd_Cidade.DataSource = obj.listCidade(cbCad_UF.Text);
+            cbEd_Cidade.DisplayMember = "Nome";
+        }
 
+        private void tabPage1_Enter(object sender, EventArgs e)
+        {
+            sisDBADM obj = new sisDBADM();
+            cbCad_UF.DataSource = obj.listUF();
+            cbCad_UF.DisplayMember = "Sigla";
+        }
+
+        private void cbCad_UF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sisDBADM obj = new sisDBADM();
+            cbCad_CIdade.DataSource = obj.listCidade(cbCad_UF.Text);
+            cbCad_CIdade.DisplayMember = "Nome";
         }
     }
 }

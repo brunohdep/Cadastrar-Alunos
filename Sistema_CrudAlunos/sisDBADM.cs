@@ -45,7 +45,7 @@ namespace Sistema_CrudAlunos
         #region "Métodos de Execução do SQL"
         public bool Insert(ArrayList p_Insert)
         {
-            vsql="INSERT INTO CURD_ALUNOS ([NOME],[IDADE],[ENDERECO],[TELEFONE],[EMAIL],[CIDADE],[UF],[NOME_PAI],[Nome_MAE])"+
+            vsql = "INSERT INTO CURD_ALUNOS ([NOME],[IDADE],[ENDERECO],[TELEFONE],[EMAIL],[CIDADE],[UF],[NOME_PAI],[Nome_MAE])" +
                     "VALUES(@NOME,@IDADE,@ENDERECO,@TELEFONE,@EMAIL,@CIDADE,@UF,@NOME_PAI,@Nome_MAE)";
             SqlCommand objcmd = null;
             if (this.conectar())
@@ -66,7 +66,7 @@ namespace Sistema_CrudAlunos
                     objcmd.ExecuteNonQuery();
                     return true;
                 }
-                catch(SqlException sqlerr)
+                catch (SqlException sqlerr)
                 {
                     throw sqlerr;
                 }
@@ -83,7 +83,7 @@ namespace Sistema_CrudAlunos
         public bool Update(ArrayList p_arrUpdate)
         {
             vsql = "UPDATE CURD_ALUNOS SET NOME = @NOME , IDADE = @IDADE , ENDERECO = @ENDERECO , TELEFONE = @TELEFONE  , EMAIL = @EMAIL , CIDADE = @CIDADE , UF = @UF , NOME_PAI = @NOME_PAI , Nome_MAE = @Nome_MAE WHERE ID_ALUNO = @ID_ALUNO";
-             
+
             SqlCommand objcmd = null;
             if (this.conectar())
             {
@@ -100,7 +100,7 @@ namespace Sistema_CrudAlunos
                     objcmd.Parameters.Add(new SqlParameter("@UF", p_arrUpdate[7]));
                     objcmd.Parameters.Add(new SqlParameter("@NOME_PAI", p_arrUpdate[8]));
                     objcmd.Parameters.Add(new SqlParameter("@Nome_MAE", p_arrUpdate[9]));
-                    
+
 
                     objcmd.ExecuteNonQuery();
                     return true;
@@ -181,7 +181,7 @@ namespace Sistema_CrudAlunos
             }
             return null;
         }
-        public DataTable Pesquisar(string sql,string param)
+        public DataTable Pesquisar(string sql, string param)
         {
             this.vsql = sql;
 
@@ -214,5 +214,75 @@ namespace Sistema_CrudAlunos
             return null;
         }
         #endregion
+
+
+        public List<string> listUF()
+        {
+            vsql = "SELECT Sigla From Estado";
+            SqlCommand objcmd = null;
+            List<string> uf = new List<string>();
+
+
+            if (this.conectar())
+            {
+                try
+                {
+                    objcmd = new SqlCommand(vsql, objCon);
+                    SqlDataReader dr = objcmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        uf.Add(dr["Sigla"].ToString());
+                    }
+                    return uf;
+                }
+                catch (SqlException sqlerr)
+                {
+                    throw sqlerr;
+                }
+                finally
+                {
+                    this.desconectar();
+                }
+            }
+            else
+            {
+                return null; ;
+            }
+        }
+
+        public List<string> listCidade(String Sigla)
+        {
+            vsql = "select Nome from Cidade where Sigla = @Sigla ";
+            SqlCommand objcmd = null;
+            List<string> cidade = new List<string>();
+
+
+            if (this.conectar())
+            {
+                try
+                {
+                    objcmd = new SqlCommand(vsql, objCon);
+                    objcmd.Parameters.AddWithValue("@Sigla",Sigla);
+                    SqlDataReader dr = objcmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        cidade.Add(dr["Nome"].ToString());
+                    }
+                    return cidade;
+                }
+                catch (SqlException sqlerr)
+                {
+                    throw sqlerr;
+                }
+                finally
+                {
+                    this.desconectar();
+                }
+            }
+            else
+            {
+                return null; ;
+            }
+        }
     }
 }
