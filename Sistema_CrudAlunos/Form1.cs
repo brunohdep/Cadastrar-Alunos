@@ -143,7 +143,7 @@ namespace Sistema_CrudAlunos
             sisDBADM obj = new sisDBADM();
             try
             {
-                int codAluno = 2;
+                int codAluno = int.Parse(tb_Excluir.Text);
                 if (obj.Delete(codAluno))
                 {
                     MessageBox.Show("Deletado com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -180,6 +180,12 @@ namespace Sistema_CrudAlunos
             }
             //obj.Pesquisar()
             //dgEditarAluno.DataSource = obj.ListaGrid();
+        }
+
+        private void dgExcluirAluno_Enter(object sender, EventArgs e)
+        {
+            sisDBADM obj = new sisDBADM();
+             dgExcluirAluno.DataSource = obj.ListaGrid();
         }
     }
 }

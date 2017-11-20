@@ -8,3 +8,13 @@ c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\D
 c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.exe
 c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.pdb
 c:\users\bruno henrique\source\repos\Sistema_CrudAlunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.frm_Crud.resources
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\bin\Debug\Sistema_CrudAlunos.exe.config
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\bin\Debug\Sistema_CrudAlunos.exe
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\bin\Debug\Sistema_CrudAlunos.pdb
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.csprojResolveAssemblyReference.cache
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.frm_Crud.resources
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.Properties.Resources.resources
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.csproj.GenerateResource.Cache
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.exe
+C:\Users\Bruno Henrique\source\repos\Sistema_CrudAlunos\Cadastrar-Alunos\Sistema_CrudAlunos\obj\Debug\Sistema_CrudAlunos.pdb

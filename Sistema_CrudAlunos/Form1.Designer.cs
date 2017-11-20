@@ -44,35 +44,39 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dgAddAluno = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgEditarAluno = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgExcluirAluno = new System.Windows.Forms.DataGridView();
-            this.dgPesquisarAluno = new System.Windows.Forms.DataGridView();
-            this.bt_pesquisa = new System.Windows.Forms.Button();
-            this.tb_pesquisar = new System.Windows.Forms.TextBox();
-            this.rb_Nome = new System.Windows.Forms.RadioButton();
-            this.rb_codigo = new System.Windows.Forms.RadioButton();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.gpPesquisarAluno = new System.Windows.Forms.GroupBox();
-            this.gbTipoDePesquisa = new System.Windows.Forms.GroupBox();
             this.lbDigite = new System.Windows.Forms.Label();
+            this.gbTipoDePesquisa = new System.Windows.Forms.GroupBox();
+            this.rb_codigo = new System.Windows.Forms.RadioButton();
+            this.rb_Nome = new System.Windows.Forms.RadioButton();
+            this.tb_pesquisar = new System.Windows.Forms.TextBox();
+            this.bt_pesquisa = new System.Windows.Forms.Button();
+            this.dgPesquisarAluno = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_Excluir = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgAddAluno)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEditarAluno)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgExcluirAluno)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarAluno)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.gpPesquisarAluno.SuspendLayout();
             this.gbTipoDePesquisa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarAluno)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -216,45 +220,10 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(887, 451);
+            this.tabPage1.Size = new System.Drawing.Size(756, 451);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Adicionar Aluno";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dgEditarAluno);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(887, 451);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Editar Aluno";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dgExcluirAluno);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(887, 451);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Excluir Aluno";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.gpPesquisarAluno);
-            this.tabPage4.Controls.Add(this.dgPesquisarAluno);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(756, 451);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Pesquisar Aluno";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // dgAddAluno
             // 
@@ -268,6 +237,18 @@
             this.dgAddAluno.Size = new System.Drawing.Size(883, 287);
             this.dgAddAluno.TabIndex = 0;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgEditarAluno);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Size = new System.Drawing.Size(756, 451);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Editar Aluno";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // dgEditarAluno
             // 
             this.dgEditarAluno.AllowUserToAddRows = false;
@@ -278,9 +259,21 @@
             this.dgEditarAluno.Location = new System.Drawing.Point(0, 164);
             this.dgEditarAluno.Name = "dgEditarAluno";
             this.dgEditarAluno.ReadOnly = true;
-            this.dgEditarAluno.Size = new System.Drawing.Size(887, 287);
+            this.dgEditarAluno.Size = new System.Drawing.Size(756, 287);
             this.dgEditarAluno.TabIndex = 1;
             this.dgEditarAluno.Enter += new System.EventHandler(this.dgEditarAluno_Enter);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox1);
+            this.tabPage3.Controls.Add(this.dgExcluirAluno);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(756, 451);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Excluir Aluno";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dgExcluirAluno
             // 
@@ -291,61 +284,21 @@
             this.dgExcluirAluno.Location = new System.Drawing.Point(1, 161);
             this.dgExcluirAluno.Name = "dgExcluirAluno";
             this.dgExcluirAluno.ReadOnly = true;
-            this.dgExcluirAluno.Size = new System.Drawing.Size(883, 287);
+            this.dgExcluirAluno.Size = new System.Drawing.Size(757, 287);
             this.dgExcluirAluno.TabIndex = 1;
+            this.dgExcluirAluno.Enter += new System.EventHandler(this.dgExcluirAluno_Enter);
             // 
-            // dgPesquisarAluno
+            // tabPage4
             // 
-            this.dgPesquisarAluno.AllowUserToAddRows = false;
-            this.dgPesquisarAluno.AllowUserToDeleteRows = false;
-            this.dgPesquisarAluno.BackgroundColor = System.Drawing.Color.White;
-            this.dgPesquisarAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgPesquisarAluno.GridColor = System.Drawing.SystemColors.GrayText;
-            this.dgPesquisarAluno.Location = new System.Drawing.Point(1, 164);
-            this.dgPesquisarAluno.Name = "dgPesquisarAluno";
-            this.dgPesquisarAluno.ReadOnly = true;
-            this.dgPesquisarAluno.Size = new System.Drawing.Size(755, 287);
-            this.dgPesquisarAluno.TabIndex = 1;
-            // 
-            // bt_pesquisa
-            // 
-            this.bt_pesquisa.Location = new System.Drawing.Point(420, 67);
-            this.bt_pesquisa.Name = "bt_pesquisa";
-            this.bt_pesquisa.Size = new System.Drawing.Size(75, 26);
-            this.bt_pesquisa.TabIndex = 2;
-            this.bt_pesquisa.Text = "Pesquisar";
-            this.bt_pesquisa.UseVisualStyleBackColor = true;
-            this.bt_pesquisa.Click += new System.EventHandler(this.bt_pesquisa_Click);
-            // 
-            // tb_pesquisar
-            // 
-            this.tb_pesquisar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_pesquisar.Location = new System.Drawing.Point(9, 68);
-            this.tb_pesquisar.Name = "tb_pesquisar";
-            this.tb_pesquisar.Size = new System.Drawing.Size(405, 25);
-            this.tb_pesquisar.TabIndex = 3;
-            // 
-            // rb_Nome
-            // 
-            this.rb_Nome.AutoSize = true;
-            this.rb_Nome.Checked = true;
-            this.rb_Nome.Location = new System.Drawing.Point(17, 38);
-            this.rb_Nome.Name = "rb_Nome";
-            this.rb_Nome.Size = new System.Drawing.Size(77, 20);
-            this.rb_Nome.TabIndex = 4;
-            this.rb_Nome.TabStop = true;
-            this.rb_Nome.Text = "Por Nome";
-            this.rb_Nome.UseVisualStyleBackColor = true;
-            // 
-            // rb_codigo
-            // 
-            this.rb_codigo.AutoSize = true;
-            this.rb_codigo.Location = new System.Drawing.Point(17, 64);
-            this.rb_codigo.Name = "rb_codigo";
-            this.rb_codigo.Size = new System.Drawing.Size(86, 20);
-            this.rb_codigo.TabIndex = 5;
-            this.rb_codigo.Text = "Por Código";
-            this.rb_codigo.UseVisualStyleBackColor = true;
+            this.tabPage4.Controls.Add(this.gpPesquisarAluno);
+            this.tabPage4.Controls.Add(this.dgPesquisarAluno);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(756, 451);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Pesquisar Aluno";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // gpPesquisarAluno
             // 
@@ -360,6 +313,15 @@
             this.gpPesquisarAluno.TabStop = false;
             this.gpPesquisarAluno.Text = "Pesquisar Aluno";
             // 
+            // lbDigite
+            // 
+            this.lbDigite.AutoSize = true;
+            this.lbDigite.Location = new System.Drawing.Point(6, 41);
+            this.lbDigite.Name = "lbDigite";
+            this.lbDigite.Size = new System.Drawing.Size(155, 16);
+            this.lbDigite.TabIndex = 5;
+            this.lbDigite.Text = "Digite o valor para pesquisa";
+            // 
             // gbTipoDePesquisa
             // 
             this.gbTipoDePesquisa.Controls.Add(this.rb_codigo);
@@ -371,14 +333,86 @@
             this.gbTipoDePesquisa.TabStop = false;
             this.gbTipoDePesquisa.Text = "Tipo de Pesquisa";
             // 
-            // lbDigite
+            // rb_codigo
             // 
-            this.lbDigite.AutoSize = true;
-            this.lbDigite.Location = new System.Drawing.Point(6, 41);
-            this.lbDigite.Name = "lbDigite";
-            this.lbDigite.Size = new System.Drawing.Size(155, 16);
-            this.lbDigite.TabIndex = 5;
-            this.lbDigite.Text = "Digite o valor para pesquisa";
+            this.rb_codigo.AutoSize = true;
+            this.rb_codigo.Location = new System.Drawing.Point(17, 64);
+            this.rb_codigo.Name = "rb_codigo";
+            this.rb_codigo.Size = new System.Drawing.Size(86, 20);
+            this.rb_codigo.TabIndex = 5;
+            this.rb_codigo.Text = "Por Código";
+            this.rb_codigo.UseVisualStyleBackColor = true;
+            // 
+            // rb_Nome
+            // 
+            this.rb_Nome.AutoSize = true;
+            this.rb_Nome.Checked = true;
+            this.rb_Nome.Location = new System.Drawing.Point(17, 38);
+            this.rb_Nome.Name = "rb_Nome";
+            this.rb_Nome.Size = new System.Drawing.Size(77, 20);
+            this.rb_Nome.TabIndex = 4;
+            this.rb_Nome.TabStop = true;
+            this.rb_Nome.Text = "Por Nome";
+            this.rb_Nome.UseVisualStyleBackColor = true;
+            // 
+            // tb_pesquisar
+            // 
+            this.tb_pesquisar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_pesquisar.Location = new System.Drawing.Point(9, 68);
+            this.tb_pesquisar.Name = "tb_pesquisar";
+            this.tb_pesquisar.Size = new System.Drawing.Size(405, 25);
+            this.tb_pesquisar.TabIndex = 3;
+            // 
+            // bt_pesquisa
+            // 
+            this.bt_pesquisa.Location = new System.Drawing.Point(420, 67);
+            this.bt_pesquisa.Name = "bt_pesquisa";
+            this.bt_pesquisa.Size = new System.Drawing.Size(75, 26);
+            this.bt_pesquisa.TabIndex = 2;
+            this.bt_pesquisa.Text = "Pesquisar";
+            this.bt_pesquisa.UseVisualStyleBackColor = true;
+            this.bt_pesquisa.Click += new System.EventHandler(this.bt_pesquisa_Click);
+            // 
+            // dgPesquisarAluno
+            // 
+            this.dgPesquisarAluno.AllowUserToAddRows = false;
+            this.dgPesquisarAluno.AllowUserToDeleteRows = false;
+            this.dgPesquisarAluno.BackgroundColor = System.Drawing.Color.White;
+            this.dgPesquisarAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgPesquisarAluno.GridColor = System.Drawing.SystemColors.GrayText;
+            this.dgPesquisarAluno.Location = new System.Drawing.Point(1, 164);
+            this.dgPesquisarAluno.Name = "dgPesquisarAluno";
+            this.dgPesquisarAluno.ReadOnly = true;
+            this.dgPesquisarAluno.Size = new System.Drawing.Size(755, 287);
+            this.dgPesquisarAluno.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.tb_Excluir);
+            this.groupBox1.Location = new System.Drawing.Point(6, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(363, 99);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Excluir Aluno";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Código do Aluno";
+            // 
+            // tb_Excluir
+            // 
+            this.tb_Excluir.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Excluir.Location = new System.Drawing.Point(6, 59);
+            this.tb_Excluir.Name = "tb_Excluir";
+            this.tb_Excluir.Size = new System.Drawing.Size(143, 25);
+            this.tb_Excluir.TabIndex = 4;
             // 
             // frm_Crud
             // 
@@ -406,17 +440,19 @@
             this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgAddAluno)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgEditarAluno)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgExcluirAluno)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarAluno)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.gpPesquisarAluno.ResumeLayout(false);
             this.gpPesquisarAluno.PerformLayout();
             this.gbTipoDePesquisa.ResumeLayout(false);
             this.gbTipoDePesquisa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarAluno)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -451,6 +487,9 @@
         private System.Windows.Forms.GroupBox gpPesquisarAluno;
         private System.Windows.Forms.Label lbDigite;
         private System.Windows.Forms.GroupBox gbTipoDePesquisa;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_Excluir;
     }
 }
 
